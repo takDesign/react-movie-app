@@ -1,4 +1,4 @@
-This is ridiculously simple React and Redux test code. What this does is to display user's input from A to B.
+This is a ridiculously simple React and Redux test code. What this does is to display user's input from A to B.
 
 ## Available Scripts
 
