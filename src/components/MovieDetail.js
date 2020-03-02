@@ -12,17 +12,17 @@ class MovieDetail extends Component {
         };
     }
     // fetch movies from API
-    // componentDidMount() {
-    //     fetch(`http://www.omdbapi.com/?apikey=bfdaf441&i=${this.props.movieid}`)
-    //         .then(response => response.json())
-    //         .then(arrMovies => {
-    //             console.log(arrMovies);
-    //             this.setState({
-    //                 isLoaded: true,
-    //                 movie: arrMovies.Search
-    //             });
-    //         });
-    // }
+    componentDidMount() {
+        fetch(`http://www.omdbapi.com/?apikey=bfdaf441&i=${this.props.movieid}`)
+            .then(response => response.json())
+            .then(arrMovies => {
+                console.log(arrMovies);
+                this.setState({
+                    isLoaded: true,
+                    movie: arrMovies.Search
+                });
+            });
+    }
     render() {
         console.log('state deteilpage', this.state);
         console.log('props deteilpage', this.props);
